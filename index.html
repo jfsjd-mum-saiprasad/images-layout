@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
+    <title>Sai Photo Gallery</title>
+    <link href="grid-bootstrap.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+                <div class="heading-container">
+                    <span class="name">IMAGES</span>
+                    <span style="color:white;">
+                        <i class="fa-thin fa-copyright"></i>
+                    </span>
+                    <div class="header-options">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                            <span class="random"><button>HOME</button></span>
+                            <span class="random"><button>Hd Wallpapers</button></span>
+                            <span class="random"><button>More</button></span>
+                    </div>
+                </div>
+                <div>
+
+
+                    <div>
+
+                        <div class="slideshow-container">
+
+                            <div class="mySlides fade">
+                              <div class="numbertext">1 / 3</div>
+                              <img src="img3.jpg" class="sai">
+                              <div class="text">Batman</div>
+                            </div>
+                            
+                            <div class="mySlides fade">
+                              <div class="numbertext">2 / 3</div>
+                              <img src="img13.jpg" class="sai">
+                              <div class="text">Chandhan</div>
+                            </div>
+                            
+                            <div class="mySlides fade">
+                              <div class="numbertext">3 / 3</div>
+                              <img src="Sai.jpeg" class="sai">
+                              <div class="text">Sai</div>
+                            </div>
+                            
+                            <a class="prev" onclick="plusSlides(-1)">❮</a>
+                            <a class="next" onclick="plusSlides(1)">❯</a>
+                            
+                            </div>
+                            <br>
+                            
+                            <div style="text-align:center">
+                              <span class="dot" onclick="currentSlide(1)"></span> 
+                              <span class="dot" onclick="currentSlide(2)"></span> 
+                              <span class="dot" onclick="currentSlide(3)"></span> 
+                            </div>
+                            
+                            <script>
+                            let slideIndex = 1;
+                            showSlides(slideIndex);
+                            
+                            function plusSlides(n) {
+                              showSlides(slideIndex += n);
+                            }
+                            
+                            function currentSlide(n) {
+                              showSlides(slideIndex = n);
+                            }
+                            
+                            function showSlides(n) {
+                              let i;
+                              let slides = document.getElementsByClassName("mySlides");
+                              let dots = document.getElementsByClassName("dot");
+                              if (n > slides.length) {slideIndex = 1}    
+                              if (n < 1) {slideIndex = slides.length}
+                              for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";  
+                              }
+                              for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                              }
+                              slides[slideIndex-1].style.display = "block";  
+                              dots[slideIndex-1].className += " active";
+                            }
+                            </script>
+
+                    </div>
+             
+                    <div class="container">
+                      <div class="box">
+                       <div class="col">
+                                  <img src="1img.jpeg" alt="">
+                                  <img src="29img.jpeg" alt="">
+                                  <img src="21img.jpeg" alt="">
+                                  <img src="20img.jpeg" alt="">
+                                  <img src="3img.jpeg" alt="">
+                                  <img src="4img.jpeg" alt="">
+                                  <img src="5img.jpeg" alt="">
+                                  <img src="10img.jpeg" alt="">
+                                  <img src="6img.jpeg" alt="">     
+                                  <img src="31img.jpeg" alt="">
+                        </div>
+
+                        <div class="col">
+                                  <img src="19img.jpeg" alt="">
+                                  <img src="30img.jpeg" alt="">
+                                  <img src="2img.jpeg" alt="">
+                                  <img src="8img.jpeg" alt="">
+                                  <img src="9img.jpeg" alt="">
+                                  <img src="15img.jpeg" alt="">
+                                  <img src="14img.jpeg" alt="">  
+                                  <img src="24img.jpeg" alt="">  
+                                  <img src="4.jpeg" alt="">  
+                                  <img src="34img.jpeg" alt="">
+                                  <img src="26img.jpeg" alt="">     
+                                  
+
+                </div>
+                          <div class="col">
+                            <img src="22img.jpeg" alt="">
+                            <img src="23img.jpeg" alt="">
+                            <img src="33img.jpeg" alt="">
+                            <img src="12img.jpeg" alt="">
+                            <img src="13img.jpeg" alt="">
+                            <img src="25img.jpeg" alt="">
+                            <img src="11img.jpeg" alt="">
+                            <img src="16img.jpeg" alt="">
+                            <img src="7img.jpeg" alt="">   
+                            <img src="32img.jpeg" alt="">
+                            <img src="27img.jpeg" alt="">  
+                            
+
+
+                              </div>
+                      </div>
+                  </div> 
+
+                  
+                  
+
+                 
+</body>
+</html>
